@@ -7,9 +7,6 @@ Este projeto consiste no desenvolvimento de um website SPA utilizando React no f
 <br />
 <br />
 
-## :rocket: Árius-Help
-A Árius-Help é uma startup que visa melhorar todos os negócios do mundo com o uso da tecnologia, treinando empreendedores e micro-empreendedores na utilização da tecnologia a favor do seu negócio (marketing digital, e-commerce, aplicativos e serviços) isso com a construção de sistemas para vendas online e automatização do negócio. Além disso, a startup tambem visa projetos sociais para melhoras as condições de vida de todos com o uso de sistemas tecnologicos.
-
 ## :computer: Tecnologias Utilizadas
 
 Este projeto utiliza as seguintes tecnologias:
@@ -21,6 +18,11 @@ Este projeto utiliza as seguintes tecnologias:
 - [React](https://reactjs.org/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+<br />
+
+## :rocket: Árius-Help
+A Árius-Help é uma startup que visa melhorar todos os negócios do mundo com o uso da tecnologia, treinando empreendedores e micro-empreendedores na utilização da tecnologia a favor do seu negócio (marketing digital, e-commerce, aplicativos e serviços) isso com a construção de sistemas para vendas online e automatização do negócio. Além disso, a startup tambem visa projetos sociais para melhoras as condições de vida de todos com o uso de sistemas tecnologicos.
+<br />
 <br />
 
 ## :sparkles: Grupo privado
