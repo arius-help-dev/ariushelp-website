@@ -45,5 +45,3 @@ Siga a Árius-Help startup nas redes sociais, vamos conversar um pouco :wink:
 - [Facebook](https://www.facebook.com/ariushelp).
 - [Whatsapp](encurtador.com.br/nqvJL).
 - [LinkedIn](https://www.linkedin.com/company/49110536).
-<br />
-<br />
