@@ -4,6 +4,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 10px 70px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 nav .nav-logo {
@@ -58,7 +60,7 @@ nav .business-link {
   align-items: center;
   margin-left: 16px;
   padding-left: 16px;
-  border-left: 1px solid #FFF;
+  border-left: 1px solid #fff;
 }
 
 nav .button {
@@ -81,12 +83,12 @@ nav .nav-drop a {
 
 nav .nav-drop::after {
   content: "►";
-  color: #FFF;
-  font-size: .8rem;
+  color: #fff;
+  font-size: 0.8rem;
   padding-left: 4px;
 }
 
-nav .nav-drop:hover::after{
+nav .nav-drop:hover::after {
   content: "▼";
 }
 
@@ -99,7 +101,7 @@ nav .dropped-menu {
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
   flex-direction: column;
   position: absolute;
-  transition: .3s;
+  transition: 0.3s;
   opacity: 0;
   width: 140%;
   margin-left: -20%;
@@ -109,14 +111,14 @@ nav .dropped-menu {
 
 nav .dropped-menu a {
   color: var(--dark);
-  font-size: .95rem;
+  font-size: 0.95rem;
   margin: 5px 0px;
 }
 
 nav .nav-drop:hover .dropped-menu {
   display: flex;
   animation-name: show-dropped-menu;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-fill-mode: forwards;
 }
 
@@ -127,6 +129,148 @@ nav .dropped-menu .nav-link::after {
 }
 
 @keyframes show-dropped-menu {
-  from { opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+nav .navbar-toggle-header button {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  nav {
+    padding: 10px 40px;
+  }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+  nav {
+    justify-content: center;
+  }
+  nav .nav-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 780px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+    justify-content: start;
+    min-height: auto; /* is setted to 100vh when burguer button click event */
+  }
+
+  nav .navbar-toggle-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* BURGUER BUTTON */
+  nav .navbar-toggle-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    height: 40px;
+    width: 56px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  nav .navbar-toggle-header .burguer-button:active {
+    border: none !important;
+  }
+
+  nav .navbar-toggle-header .burguer-button span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s;
+  }
+
+  nav .navbar-toggle-header .burguer-button span::after {
+    content: "";
+    width: 100%;
+    min-height: 2px;
+    background-color: #fff;
+    margin-top: 10px;
+    transition: 0.5s;
+  }
+
+  nav .navbar-toggle-header .burguer-button span::before {
+    content: "";
+    width: 100%;
+    min-height: 2px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    transition: 0.5s;
+  }
+
+  nav .navbar-toggle-header .burguer-button.active span {
+    transform: rotate(45deg);
+  }
+
+  nav .navbar-toggle-header .burguer-button.active span::before {
+    margin-bottom: 5px;
+    transform: rotate(270deg);
+  }
+
+  nav .navbar-toggle-header .burguer-button.active span::after {
+    margin-top: -8px;
+    transform: rotate(180deg);
+  }
+  /* END BURGUER BUTTON */
+
+  nav .logo {
+    display: block;
+  }
+
+  nav .navbar-links {
+    flex-direction: column;
+    margin: auto 0 auto 0;
+    display: none; /* is setted to flex when burguer button click event */
+  }
+
+  nav .button {
+    margin-left: 0px;
+    background-color: var(--blue);
+  }
+
+  nav .business-link {
+    margin-left: 0px;
+    padding-left: 0px;
+    border-left: none;
+    flex-direction: column;
+    margin-top: 24px;
+    padding-top: 8px;
+    border-top: 1px solid #fff;
+  }
+
+  nav .main-links {
+    flex-direction: column;
+  }
+
+  nav .nav-link {
+    margin: 16px 0px;
+  }
+
+  nav .nav-drop {
+    margin: 16px 0px;
+  }
+
+  nav .dropped-menu .nav-link {
+    margin: 8px 10px;
+  }
 }

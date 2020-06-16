@@ -6,20 +6,56 @@ import logo from "../../assets/arius-help-logo.png";
 
 const Navbar = () => {
   const history = useHistory();
+  let navbarToggle = false;
 
   function handleNavigate(event) {
     event.preventDefault();
     history.push("/");
   }
 
+  function handleActionNavbar(event) {
+    event.preventDefault();
+
+    const navbar = document.querySelector("nav");
+    const navbarLinks = document.querySelector(".navbar-links");
+    const burguerButton = document.querySelector(".burguer-button");
+
+    navbarToggle
+      ? hideNavbar(navbar, navbarLinks, burguerButton)
+      : showNavbar(navbar, navbarLinks, burguerButton);
+  }
+
+  function showNavbar(navbar, navbarLinks, burguerButton) {
+    burguerButton.classList.add("active");
+    navbar.style.minHeight = "100vh";
+    navbarLinks.style.display = "flex";
+    navbarToggle = true;
+  }
+
+  function hideNavbar(navbar, navbarLinks, burguerButton) {
+    burguerButton.classList.remove("active");
+    navbar.style.minHeight = "auto";
+    navbarLinks.style.display = "none";
+    navbarToggle = false;
+  }
+
   return (
     <nav>
-      <img
-        src={logo}
-        alt="logo arius help"
-        className="nav-logo"
-        onClick={(event) => handleNavigate(event)}
-      />
+      <div className="navbar-toggle-header">
+        <img
+          src={logo}
+          alt="logo arius help"
+          className="nav-logo"
+          onClick={(event) => handleNavigate(event)}
+        />
+        <button
+          className="burguer-button"
+          onClick={(event) => handleActionNavbar(event)}
+        >
+          <span></span>
+        </button>
+      </div>
+
       <div className="navbar-links">
         <ul className="main-links">
           <li className="nav-link">
