@@ -1,0 +1,90 @@
+main {
+  background-image: url("data:image/svg+xml,%3Csvg width='1360' height='780' viewBox='0 0 1360 780' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-0.5 625V0.5L1360 -1.5V141.5C1344.17 153 1291.7 180.6 1208.5 199C1104.5 222 721 511 500 625C323.2 716.2 92.6667 663 -0.5 625Z' fill='%23611EB8'/%3E%3C/svg%3E%0A"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 680px;
+}
+
+main .row {
+  max-width: 1440px;
+  padding: 0px 70px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+main .first-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 470px;
+  color: var(--white);
+}
+
+main .first-column h1 {
+  margin-bottom: 20px;
+}
+
+main .first-column p {
+  font-size: 1rem;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+main .button {
+  max-width: 220px;
+  max-height: 50px;
+  background-color: var(--green);
+}
+
+main .last-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 120px;
+}
+
+main .last-column img{
+  width: 100%;
+  max-width: 620px;
+}
+
+@media (min-width: 1440px) {
+  main {
+    background-image: url("data:image/svg+xml,%3Csvg width='1360' height='376' viewBox='0 0 1360 376' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 347.878V-0.883072L1360 -2V77.8604C1344.17 84.2827 1291.73 99.6963 1208.56 109.972C1104.59 122.817 721.235 284.213 500.316 347.878C323.581 398.81 93.1324 369.099 0 347.878Z' fill='%23611EB8'/%3E%3C/svg%3E%0A");
+    height: 720px;
+  }
+}
+
+@media (max-width: 1200px) {
+  main .row {
+    padding: 0px 40px;
+  }
+}
+
+@media (max-width: 1080px) {
+  main .last-column img{
+    width: 100%;
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 960px) {
+  main .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  main .last-column {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 520px) {
+  main .row {
+    padding: 0px 30px;
+  }
+}
