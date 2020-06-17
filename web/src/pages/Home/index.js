@@ -8,7 +8,7 @@ import mainBusiness from "../../assets/home-business.png";
 const Home = () => {
   return(
     <>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <main>
         <div className="row">

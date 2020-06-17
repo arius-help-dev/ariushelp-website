@@ -28,6 +28,7 @@ const Navbar = () => {
   function showNavbar(navbar, navbarLinks, burguerButton) {
     burguerButton.classList.add("active");
     navbar.style.minHeight = "100vh";
+    navbar.style.backgroundColor = "rgba(0,0,0,.80)";
     navbarLinks.style.display = "flex";
     navbarToggle = true;
   }
@@ -35,6 +36,7 @@ const Navbar = () => {
   function hideNavbar(navbar, navbarLinks, burguerButton) {
     burguerButton.classList.remove("active");
     navbar.style.minHeight = "auto";
+    navbar.style.backgroundColor = "rgba(0,0,0,.25)";
     navbarLinks.style.display = "none";
     navbarToggle = false;
   }

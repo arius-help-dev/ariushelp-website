@@ -83,8 +83,19 @@ main .last-column img{
   }
 }
 
+@media (max-width: 720px) {
+  main .last-column img{
+    width: 100%;
+    max-width: 440px;
+  }
+}
+
 @media (max-width: 520px) {
   main .row {
     padding: 0px 30px;
+  }
+
+  main .button {
+    align-self: center;
   }
 }
