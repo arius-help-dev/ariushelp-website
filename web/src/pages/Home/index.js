@@ -12,34 +12,9 @@ import briefCase from "../../assets/briefcase.svg";
 const Home = () => {
   return (
     <>
-    
-      <ServiceCard
-        title="Sites personalizados"
-        text="Elaboramos sites lindos e reponsivos para o seu negócio"
-        url={briefCase}
-      />
+      <Navbar />
 
-      <ServiceCard
-        title="Sites personalizados"
-        text="Elaboramos sites lindos e reponsivos para o seu negócio"
-        url={briefCase}
-      />
-
-      <ServiceCard
-        title="Sites personalizados"
-        text="Elaboramos sites lindos e reponsivos para o seu negócio"
-        url={briefCase}
-      />
-
-      <ServiceCard
-        title="Sites personalizados"
-        text="Elaboramos sites lindos e reponsivos para o seu negócio"
-        url={briefCase}
-      />
-
-      {/* <Navbar /> */}
-
-      {/* <main>
+      <main>
         <div className="row">
           <div className="first-column">
             <h1>Lorem Ipsum Dollor</h1>
@@ -50,7 +25,43 @@ const Home = () => {
             <img src={mainBusiness} alt="e-commerce" />
           </div>
         </div>
-      </main> */}
+      </main>
+
+      <section id="intro-services">
+        <div class="row">
+          <div className="first-column">
+            <h1>Lorem ipsum ixi Dollor?</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit. Cras ornare tempus libero, 
+              eu dictum orci imperdiet vitae.
+            </p>
+            <Link to="#" className="button">Cadastro</Link>
+          </div>
+          <div className="last-column">
+            <ServiceCard
+              title="Sites personalizados"
+              text="Elaboramos sites lindos e reponsivos para o seu negócio"
+              url={briefCase}
+            />
+            <ServiceCard
+              title="Sites personalizados"
+              text="Elaboramos sites lindos e reponsivos para o seu negócio"
+              url={briefCase}
+            />
+            <ServiceCard
+              title="Sites personalizados"
+              text="Elaboramos sites lindos e reponsivos para o seu negócio"
+              url={briefCase}
+            />
+            <ServiceCard
+              title="Sites personalizados"
+              text="Elaboramos sites lindos e reponsivos para o seu negócio"
+              url={briefCase}
+            />
+          </div>
+        </div>
+      </section>
+
     </>
   );
 };
