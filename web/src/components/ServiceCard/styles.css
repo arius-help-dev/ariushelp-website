@@ -1,0 +1,70 @@
+.service-card {
+  width: 240px;
+  height: 324px;
+  background: #FFFFFF;
+  box-shadow: 4px 8px 10px rgba(77, 77, 77, 0.5);
+  border-radius: 10px;
+  border-bottom: solid 20px;
+  border-color: var(--light-purple);
+  padding: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card .card-header {
+  margin: auto;
+  background-image: url("../../assets//service-card-background.svg");
+  width: 120px;
+  height: 82px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card .card-header figure {
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+  background-color: var(--white);
+  padding: 6px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-card .card-header img {
+  height: 36px;
+  width: 36px;
+}
+
+.service-card .card-body h1 {
+  font-family: "Raleway";
+  font-weight: bold;
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--dark);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card .card-body h1::after {
+  content: ' ';
+  width: 60px;
+  height: 3px;
+  background-color: var(--purple);
+  margin: 20px auto;
+}
+
+.service-card .card-body p {
+  font-family: "Open Sans";
+  font-size: 0.875rem;
+  line-height: 24px;
+  text-align: center;
+  color: var(--dark);
+}
