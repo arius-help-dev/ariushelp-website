@@ -1,0 +1,71 @@
+.testimonialCard {
+  background-color: #FFF;
+  width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.testimonialCard .header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+
+.testimonialCard img {
+  max-width: 30px;
+  min-width: 30px;
+  margin: 0 5px;
+}
+
+.testimonialCard img:first-child, 
+.testimonialCard img:last-child {
+  margin: 0 0;
+}
+
+.testimonialCard .body{
+  margin-bottom: 70px;
+}
+
+.testimonialCard .body blockquote{
+  font-size: 0.75rem;
+  line-height: 20px;
+  color: var(--dark);
+  font-family: "Open Sans";
+}
+
+.testimonialCard .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonialCard .footer img {
+  min-width: 60px;
+  min-height: 60px;
+  max-width: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.testimonialCard .footer .info {
+  display: flex;
+  flex-direction: column;
+  color: var(--dark);
+}
+
+.info cite {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: "Roboto";
+  margin-bottom: 5px;
+}
+
+.info span {
+  font-size: 0.625rem;
+  font-family: "Open Sans";
+}

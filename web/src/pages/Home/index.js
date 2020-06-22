@@ -2,17 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
-import Navbar from "../../components/Navbar/index.js";
-import ServiceCard from "../../components/ServiceCard/index.js";
+import Navbar from "../../components/Navbar/";
+import ServiceCard from "../../components/ServiceCard/";
+import TestimonialCard from "../../components/TestimonialCard/"
 
 import mainBusiness from "../../assets/home-business.png";
-import briefCase from "../../assets/briefcase.svg";
 import mainTeam from "../../assets/home-preabout-image.png";
+
+import briefCase from "../../assets/briefcase.svg";
+import profileImage from "../../assets/edvaldojunior.jpg";
 
 const Home = () => {
   return (
     <>
       <Navbar />
+
+      {/* <TestimonialCard
+        rank="5"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis mauris eu leo fermentum, 
+        eu blandit neque sollicitudin."
+        profileUrl={profileImage}
+        author="Edvaldo Junior"
+        ocupation="Desenvolvedor Fullstack"
+      /> */}
 
       <main>
         <div className="row">
@@ -74,7 +86,6 @@ const Home = () => {
           <div className="last-column">
             <img src={mainTeam} alt="AriusTeam" />
           </div>
-
         </div>
       </section>
 
