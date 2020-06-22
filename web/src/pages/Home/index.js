@@ -17,15 +17,6 @@ const Home = () => {
     <>
       <Navbar />
 
-      {/* <TestimonialCard
-        rank="5"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis mauris eu leo fermentum, 
-        eu blandit neque sollicitudin."
-        profileUrl={profileImage}
-        author="Edvaldo Junior"
-        ocupation="Desenvolvedor Fullstack"
-      /> */}
-
       <main>
         <div className="row">
           <div className="first-column">
@@ -86,6 +77,38 @@ const Home = () => {
           <div className="last-column">
             <img src={mainTeam} alt="AriusTeam" />
           </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h1>Conheça alguns depoimentos</h1>
+        <div className="cards-container">
+          <TestimonialCard
+            rank="5"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis mauris eu leo fermentum, 
+            eu blandit neque sollicitudin."
+            profileUrl={profileImage}
+            author="Edvaldo Junior"
+            ocupation="Desenvolvedor Fullstack"
+          />
+
+          <TestimonialCard
+            rank="5"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis mauris eu leo fermentum, 
+            eu blandit neque sollicitudin."
+            profileUrl={profileImage}
+            author="Edvaldo Junior"
+            ocupation="Desenvolvedor Fullstack"
+          />
+
+          <TestimonialCard
+            rank="5"
+            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sagittis mauris eu leo fermentum, 
+            eu blandit neque sollicitudin."
+            profileUrl={profileImage}
+            author="Edvaldo Junior"
+            ocupation="Desenvolvedor Fullstack"
+          />
         </div>
       </section>
 

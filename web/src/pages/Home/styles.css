@@ -305,3 +305,37 @@ main .last-column img{
   }
 }
 
+#testimonials {
+  background: url("../../assets/home-testimonial-background.png");
+  background-position: center;
+  background-repeat: repeat-y;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+#testimonials h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 120px;
+}
+
+#testimonials .cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container .testimonial-card {
+  margin: 0 55px;
+}
+
+@media (max-width: 1080px) {
+  .cards-container .testimonial-card  {
+    margin: 0 30px;
+  }
+}

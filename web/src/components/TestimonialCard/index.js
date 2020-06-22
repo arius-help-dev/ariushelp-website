@@ -5,7 +5,7 @@ import starImage from "../../assets/star-rank.svg";
 
 const TestimonialCard = (props) => {
   return(
-    <div className="testimonialCard">
+    <div className="testimonial-card">
       <div className="header">
         <img src={starImage} alt="Estrela" />
         <img src={starImage} alt="Estrela" />
