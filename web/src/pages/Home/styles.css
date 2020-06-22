@@ -82,8 +82,12 @@ main .last-column img{
     align-items: center;
   }
 
+  main .first-column {
+    margin-top: 160px;
+  }
+
   main .last-column {
-    padding-top: 100px;
+    padding-top: 80px;
   }
 }
 
@@ -115,6 +119,8 @@ main .last-column img{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 1440px;
+  margin: 0px auto;
 }
 
 #intro-services .row .first-column {
@@ -169,6 +175,7 @@ main .last-column img{
 }
 
 @media(max-width: 1080px) {
+
   #intro-services .row {
     flex-direction: column;
     justify-content: flex-start;
@@ -176,7 +183,9 @@ main .last-column img{
   }
 
   #intro-services .row .first-column {
+    margin-top: 0px;
     padding-left: 0px;
+    max-width: 520px;
   }
 
   #intro-services .row .last-column {
@@ -210,12 +219,6 @@ main .last-column img{
   color: var(--white);
 }
 
-@media (max-width: 1080px) {
-  #intro-about {
-    background-repeat: repeat-y;
-  }
-}
-
 #intro-about .row {
   padding: 0px 70px;
   display: flex;
@@ -223,6 +226,8 @@ main .last-column img{
   justify-content: space-between;
   align-items: center;
   min-height: 740px;
+  max-width: 1440px;
+  margin: 0px auto;
 }
 
 #intro-about .row .first-column {
@@ -263,7 +268,17 @@ main .last-column img{
   max-width: 100%;
 }
 
+@media (min-width: 1500px) {
+  #intro-about {
+    margin-top: 80px;
+  }
+}
+
 @media (max-width: 1080px) {
+  #intro-about {
+    background-repeat: repeat-y;
+  }
+
   #intro-about .row {
     flex-direction: column;
     padding: 0px 30px;
