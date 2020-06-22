@@ -6,8 +6,8 @@ import Navbar from "../../components/Navbar/index.js";
 import ServiceCard from "../../components/ServiceCard/index.js";
 
 import mainBusiness from "../../assets/home-business.png";
-
 import briefCase from "../../assets/briefcase.svg";
+import mainTeam from "../../assets/home-preabout-image.png";
 
 const Home = () => {
   return (
@@ -28,7 +28,7 @@ const Home = () => {
       </main>
 
       <section id="intro-services">
-        <div class="row">
+        <div className="row">
           <div className="first-column">
             <h1>Lorem ipsum ixi Dollor?</h1>
             <p>
@@ -59,6 +59,22 @@ const Home = () => {
               url={briefCase}
             />
           </div>
+        </div>
+      </section>
+
+      <section id="intro-about">
+        <div className="row">
+          <div className="first-column">
+            <h1>A Equipe Árius-Help</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur elit. Cras ornare tempus libero, eu dictum orci imperdiet vitae. Vestibulum risus ligula, sodales nec facilisis sed, mollis at purus.
+            </p>
+            <Link to="/about" className="button">Saiba Mais</Link>
+          </div>
+          <div className="last-column">
+            <img src={mainTeam} alt="AriusTeam" />
+          </div>
+
         </div>
       </section>
 
