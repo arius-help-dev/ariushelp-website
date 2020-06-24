@@ -5,7 +5,7 @@ footer {
   background-color: var(--dark);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -20,6 +20,7 @@ footer .row {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 80px;
 }
 
 footer .row b {
