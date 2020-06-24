@@ -1,11 +1,12 @@
 footer {
-  margin-top: 160px;
-  width: 100vw;
+  margin-top: 80px;
+  width: 100%;
   min-height: 320px;
   background-color: var(--dark);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 footer b, footer a {
@@ -14,10 +15,11 @@ footer b, footer a {
 
 footer .row {
   max-width: 1360px;
-  padding: 0px 196px;
+  padding: 0 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 footer .row b {
@@ -30,6 +32,10 @@ footer .row .first-column,
 footer .row .second-column {
   display: flex;
   flex-direction: column;
+}
+
+footer .row .second-column {
+  margin: 0px 240px;
 }
 
 footer .row .first-column ul,
@@ -95,4 +101,62 @@ footer .button {
   max-height: 40px;
   background-color: var(--green);
   border-radius: 5px;
+}
+
+footer span {
+  color: #7286A1;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 1080px) {
+  footer .row .second-column {
+    margin: 0px 220px;
+  }
+}
+
+@media (max-width: 940px) {
+  footer .row .second-column {
+    margin: 0px 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .row {
+    margin: 40px 0px;
+  }
+
+  footer .row .last-column {
+    margin: 0px 100px;
+    margin-top: 40px;
+  }
+
+  footer .row .second-column {
+    margin-right: 0px;
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 460px) {
+  footer .row .last-column {
+    margin: 0px 0px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  footer {
+    margin-top: 0px;
+    min-height: 200px;
+  }
+
+  footer .row .first-column,
+  footer .row .second-column {
+    display: none;
+  }
+
+  footer .row .last-column {
+    margin: 0px;
+  }
 }

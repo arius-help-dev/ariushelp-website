@@ -44,24 +44,24 @@ const Footer = () => {
         <div className="last-column">
           <ul>
             <li>
-              <Link to="#">
+              <a href="https://www.facebook.com/ariushelp" target="_blank" rel="noopener noreferrer" >
                 <FiFacebook size={24} />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#">
+              <a href="https://www.instagram.com/ariushelp/" target="_blank" rel="noopener noreferrer" >
                 <FiInstagram size={24} />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#">
+              <a href="https://linkedin.com/company/arius-help" target="_blank" rel="noopener noreferrer" >
                 <FiLinkedin size={24} />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="#">
+              <a href="https://api.whatsapp.com/send?phone=558381556449&text=Ol%C3%A1%20%C3%81rius-Help!" target="_blank" rel="noopener noreferrer">
                 <FiPhone size={24} />
-              </Link>
+              </a>
             </li>
           </ul>
           <Link to="/contato" className="button">
@@ -69,7 +69,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      {/* <span>Árius-Help&copy; 2020 - Alguns Direitos Reservados.</span> */}
+      <span>Árius-Help&copy; 2020 - Alguns Direitos Reservados.</span>
     </footer>
   );
 };

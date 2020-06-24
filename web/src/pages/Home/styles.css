@@ -321,6 +321,7 @@ main .last-column img{
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 120px;
+  text-align: center;
 }
 
 #testimonials .cards-container {
@@ -337,5 +338,29 @@ main .last-column img{
 @media (max-width: 1080px) {
   .cards-container .testimonial-card  {
     margin: 0 30px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cards-container .testimonial-card:last-child  {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .cards-container {
+    flex-direction: column !important;
+  }
+
+  .cards-container .testimonial-card  {
+    margin-top: 80px;
+  }
+
+  .cards-container .testimonial-card:first-child  {
+    margin-top: 0px;
+  }
+
+  .cards-container .testimonial-card:last-child  {
+    display: flex;
   }
 }
