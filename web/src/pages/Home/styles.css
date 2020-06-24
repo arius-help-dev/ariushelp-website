@@ -92,6 +92,11 @@ main .last-column img{
 }
 
 @media (max-width: 720px) {
+
+  main .first-column {
+    margin-top: 80px;
+  }
+
   main .last-column img{
     width: 100%;
     max-width: 440px;
@@ -348,6 +353,14 @@ main .last-column img{
 }
 
 @media (max-width: 640px) {
+  #testimonials {
+    padding-top: 40px;
+  }
+
+  #testimonials h1 {
+    margin-bottom: 60px;
+  }
+
   .cards-container {
     flex-direction: column !important;
   }
