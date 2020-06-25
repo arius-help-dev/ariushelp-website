@@ -1,0 +1,62 @@
+.about-main {
+  background: linear-gradient(rgba(32, 48, 70, .3), #2b3c54), url("../../assets/about-main-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+.about-main .row {
+  height: 100%;
+  max-width: 1440px;
+  padding: 0px 70px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-main .row .column {
+  max-width: 370px;
+  color: var(--white);
+}
+
+.about-main .row .column h1 {
+  font-size: 2.125rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 20px;
+}
+
+.about-main .row .column p {
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 32px;
+}
+
+@media (max-width: 1200px) {
+  .about-main .row {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 780px) {
+  .about-main {
+    min-height: 100vh;
+  }
+
+  .about-main .row {
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 520px) {
+  .about-main .row {
+    padding: 0px 30px;
+  }
+
+  .about-main .row .column p {
+    font-size: 1rem;
+    line-height: 32px;
+  }
+}
+
