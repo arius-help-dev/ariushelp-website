@@ -1,0 +1,58 @@
+.about-card {
+  max-width: 470px;
+  padding: 20px 50px;
+  background: radial-gradient(85% 85% at 50% 50%, 
+                            rgba(85, 170, 248, 0.25) 0%, 
+                            rgba(32, 48, 70, 0.1) 100%);
+  border: 2px solid #398EF2;
+  box-sizing: border-box;
+  border-radius: 50px 0px;
+}
+
+.about-card .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-card .row img {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  margin-right: 30px;
+}
+
+.about-card .row h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.125rem;
+  color: var(--light-green);
+  letter-spacing: 0.05em;
+}
+
+.about-card .row p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.750rem;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  color: #99E0E1;
+}
+
+@media(max-width: 520px) {
+  .about-card {
+    max-width: 320px;
+    padding: 12px 12px;
+  }
+  
+  .about-card .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-card .row h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-card .row p {
+    font-size: 1rem;
+  }
+}

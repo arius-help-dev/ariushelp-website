@@ -60,3 +60,17 @@
   }
 }
 
+#about-arius {
+  min-height: 700px;
+  background-color: var(--dark);
+  background-image: url("../../assets/about-background-about-arius.png");
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+#about-arius .container  {
+  padding: 160px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px 170px;
+}
