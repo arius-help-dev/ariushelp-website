@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { FiFacebook, FiInstagram, FiLinkedin, FiPhone } from "react-icons/fi";
 import "./styles.css";
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <footer>
+    <footer className={props.isTransparent ? "is-transparent" : ""}>
       <div className="row">
         <div className="first-column">
           <b>MAPA DO SITE</b>
@@ -44,22 +44,38 @@ const Footer = () => {
         <div className="last-column">
           <ul>
             <li>
-              <a href="https://www.facebook.com/ariushelp" target="_blank" rel="noopener noreferrer" >
+              <a
+                href="https://www.facebook.com/ariushelp"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiFacebook size={24} />
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/ariushelp/" target="_blank" rel="noopener noreferrer" >
+              <a
+                href="https://www.instagram.com/ariushelp/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiInstagram size={24} />
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/company/arius-help" target="_blank" rel="noopener noreferrer" >
+              <a
+                href="https://linkedin.com/company/arius-help"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiLinkedin size={24} />
               </a>
             </li>
             <li>
-              <a href="https://api.whatsapp.com/send?phone=558381556449&text=Ol%C3%A1%20%C3%81rius-Help!" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://api.whatsapp.com/send?phone=558381556449&text=Ol%C3%A1%20%C3%81rius-Help!"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiPhone size={24} />
               </a>
             </li>
