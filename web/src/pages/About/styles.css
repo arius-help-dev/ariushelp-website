@@ -117,7 +117,7 @@
 
 #galery .box {
   max-width: 1000px;
-  min-height: 600px;
+  min-height: 520px;
   margin-top: 90px;
   background: radial-gradient(50% 50% at 50% 50%, rgba(66, 101, 150, 0.8) 0%, rgba(66, 101, 150, 0.2) 100%);
   border: 2px solid #5DD5D6;

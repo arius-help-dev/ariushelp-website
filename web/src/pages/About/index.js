@@ -8,6 +8,23 @@ import AriusGalery from "../../components/AriusGalery";
 
 import missionImage from "../../assets/edvaldojunior.jpg";
 
+import image from "../../assets/about-main-background.jpg";
+
+const obje = [
+  {
+    url: image,
+    title: "Árius-Team 2020"
+  },
+  {
+    url: image,
+    title: "Árius-Team 2021"
+  },
+  {
+    url: image,
+    title: "Árius-Team 2022"
+  }
+]
+
 const About = () => {
   return (
     <>
@@ -62,7 +79,7 @@ const About = () => {
             </div>
 
             <div className="box">
-              <AriusGalery />
+              <AriusGalery data={obje} />
             </div>
           </div>
         </section>
