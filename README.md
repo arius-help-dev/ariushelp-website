@@ -18,6 +18,8 @@ Este projeto utiliza as seguintes tecnologias:
 - [React](https://reactjs.org/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [ReactCarousel](https://www.npmjs.com/package/react-responsive-carousel)
+
 <br />
 
 ## :rocket: Árius-Help
