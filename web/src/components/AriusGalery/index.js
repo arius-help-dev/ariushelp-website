@@ -4,7 +4,7 @@ import "./styles.css";
 
 const AriusGalery = (props) => {
   const slidesObject = props.data;
-  
+
   return (
     <Carousel>
       {slidesObject.map((slideData) => (

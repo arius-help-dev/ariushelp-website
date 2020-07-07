@@ -13,17 +13,17 @@ import image from "../../assets/about-main-background.jpg";
 const obje = [
   {
     url: image,
-    title: "Árius-Team 2020"
+    title: "Árius-Team 2020",
   },
   {
     url: image,
-    title: "Árius-Team 2021"
+    title: "Árius-Team 2021",
   },
   {
     url: image,
-    title: "Árius-Team 2022"
-  }
-]
+    title: "Árius-Team 2022",
+  },
+];
 
 const About = () => {
   return (
@@ -75,7 +75,11 @@ const About = () => {
           <div className="container">
             <div className="main-content">
               <h1>Time Árius-Help</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis est vel nunc rutrum elementum. Fusce interdum sem ornare felis euismod, a vehicula ipsum suscipit. </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                sagittis est vel nunc rutrum elementum. Fusce interdum sem
+                ornare felis euismod, a vehicula ipsum suscipit.{" "}
+              </p>
             </div>
 
             <div className="box">
@@ -85,7 +89,6 @@ const About = () => {
         </section>
 
         <Footer isTransparent="true" />
-
       </div>
     </>
   );

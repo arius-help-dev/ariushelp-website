@@ -75,7 +75,7 @@
   min-height: 700px;
 }
 
-#topics .container  {
+#topics .container {
   padding: 160px 70px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -102,14 +102,14 @@
   text-align: center;
 }
 
-#galery .container .main-content h1{
+#galery .container .main-content h1 {
   font-size: 2.125rem;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-#galery .container .main-content p{
+#galery .container .main-content p {
   font-size: 1.125rem;
   font-family: "Open Sans", sans-serif;
   line-height: 28px;
@@ -117,12 +117,71 @@
 
 #galery .box {
   max-width: 1000px;
-  min-height: 520px;
   margin-top: 90px;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(66, 101, 150, 0.8) 0%, rgba(66, 101, 150, 0.2) 100%);
-  border: 2px solid #5DD5D6;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(66, 101, 150, 0.8) 0%,
+    rgba(66, 101, 150, 0.2) 100%
+  );
+  border: 2px solid #5dd5d6;
   box-sizing: border-box;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 120px 0px;
   padding: 80px 120px;
+}
+
+@media (max-width: 1200px) {
+  #topics .container {
+    gap: 60px 100px;
+  }
+}
+
+@media (max-width: 1080px) {
+  #galery .box {
+    padding: 80px 60px;
+  }
+
+  #topics .container {
+    gap: 60px 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  #topics .container {
+    padding: 120px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #topics .container .about-card {
+    margin: 25px 0px;
+  }
+}
+
+@media (max-width: 780px) {
+  #galery .container {
+    padding: 0 40px;
+  }
+
+  #galery .box {
+    padding: 20px 0px;
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+
+  #galery .container .main-content h1 {
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  #galery .container .main-content p {
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 32px;
+  }
 }

@@ -9,7 +9,6 @@
   opacity: 0.4;
   filter: alpha(opacity=40);
   position: absolute;
-  z-index: 2;
   top: 20px;
   background: none;
   border: 0;
@@ -95,6 +94,7 @@
   list-style: none;
   white-space: nowrap;
 }
+
 .carousel .thumb {
   -webkit-transition: border 0.15s ease-in;
   -moz-transition: border 0.15s ease-in;

@@ -48,11 +48,17 @@
     align-items: center;
   }
 
+  .about-card .row img {
+    margin: 20px;
+  }
+
   .about-card .row h2 {
     font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
   .about-card .row p {
     font-size: 1rem;
+    margin-bottom: 10px;
   }
 }
