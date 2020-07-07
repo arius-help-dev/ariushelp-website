@@ -10,6 +10,7 @@
   filter: alpha(opacity=40);
   position: absolute;
   top: 20px;
+  z-index: 2;
   background: none;
   border: 0;
   font-size: 32px;
@@ -54,6 +55,7 @@
   position: relative;
   width: 100%;
 }
+
 .carousel * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -64,9 +66,7 @@
   display: inline-block;
   pointer-events: none;
 }
-.carousel .carousel {
-  position: relative;
-}
+
 .carousel .control-arrow {
   outline: 0;
   border: 0;
