@@ -72,7 +72,7 @@ const Navbar = () => {
             </Link>
             <ul className="dropped-menu">
               <li className="nav-link">
-                <Link to="/services/app">App's</Link>
+                <Link to="/services/apps">App's</Link>
               </li>
               <li className="nav-link">
                 <Link to="/services/websites">Websites</Link>
