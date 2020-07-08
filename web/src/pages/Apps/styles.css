@@ -1,37 +1,104 @@
 #apps-content {
-  min-height: 100vh;
+  width: 100vw;
+}
+
+#apps-content .row {
   width: 100%;
-  background: url("../../assets/services-app-background.png");
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: contain;
+  height: 100vh;
+  padding: 0 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#apps-content .container {
-  width: 100%;
-  padding: 120px 70px;
-  padding-bottom: 0;
+#apps-content .row .first-column {
+  min-width: 370px;
+  max-width: 400px;
+  color: var(--dark);
 }
 
-#apps-content .container .content {
-  width: 400px;
-}
-
-#apps-content .container .content h1 {
+#apps-content .row .first-column h1 {
   font-size: 2rem;
   line-height: 46px;
   margin-bottom: 20px;
 }
 
-#apps-content .container .content p {
+#apps-content .row .first-column p {
   font-size: 1rem;
   line-height: 32px;
   margin-bottom: 40px;
 }
 
-#apps-content .container .content .button {
+#apps-content .row .first-column img {
+  display: none;
+}
+
+#apps-content .row .first-column .button {
   border-radius: 10px;
   background-color: var(--purple);
   max-width: 150px;
   font-size: 1rem;
+}
+
+#apps-content .row .last-column {
+  max-width: 720px;
+  margin-left: 20px;
+}
+
+#apps-content .row .last-column img{
+  width: 100%;
+}
+
+@media (max-width: 1020px) {
+  #apps-content .row {
+    padding: 0 40px;
+  }
+
+  #apps-content .row .first-column h1 {
+    font-size: 2rem;
+  }
+  
+  #apps-content .row .first-column p {
+    font-size: 0.925rem;
+  }
+
+  #apps-content .row .first-column {
+    min-width: 320px;
+  }
+
+}
+
+@media (max-width: 780px) {
+  #apps-content {
+    padding: 80px 0px;
+  }
+
+  #apps-content .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  #apps-content .row .first-column {
+    min-width: auto;
+    max-width: 620px;
+    text-align: center;
+  }
+
+  #apps-content .row .first-column img {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  #apps-content .row .first-column .button {
+    margin: 0 auto;
+  }
+
+  #apps-content .row .last-column {
+    display: none;
+  }
+
 }
