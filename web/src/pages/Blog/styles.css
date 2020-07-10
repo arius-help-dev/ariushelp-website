@@ -1,0 +1,17 @@
+#blog {
+  background-color: var(--dark);
+  background-image: url("../../assets/blog-background.png");
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+#blog .container {
+  margin: 0 auto;
+  max-width: 1360px;
+  padding: 160px 70px;
+  padding-top: 240px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 120px 160px;
+  justify-items: center;
+}
