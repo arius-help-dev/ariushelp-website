@@ -15,6 +15,10 @@ nav .nav-logo {
   cursor: pointer;
 }
 
+nav .nav-logo:hover {
+  filter: brightness(1.3);
+}
+
 nav .navbar-links {
   display: flex;
   flex-direction: row;
@@ -336,5 +340,50 @@ nav .navbar-toggle-header button {
 
   nav .dropped-menu .nav-link {
     margin: 2px 0px;
+  }
+}
+
+/* NAV-DARK */
+.nav-dark {
+  color: var(--dark) !important;
+}
+
+.is-white {
+  color: var(--white) !important;
+}
+
+.nav-link.nav-dark::after {
+  background-color: var(--dark);
+}
+
+.nav-drop.nav-dark::after {
+  color: var(--dark) !important;
+}
+
+nav .business-link.nav-dark {
+  border-left: 2px solid var(--dark);
+}
+
+/* NAV-DARK */
+@media (max-width: 780px) {
+  .nav-dark {
+    color: var(--white) !important;
+  }
+  
+  .is-white {
+    color: var(--white) !important;
+  }
+  
+  .nav-link.nav-dark::after {
+    background-color: var(--white);
+  }
+  
+  .nav-drop.nav-dark::after {
+    color: var(--white) !important;
+  }
+  
+  nav .business-link.nav-dark {
+    border-left: 2px solid var(--white);
+    border: none;
   }
 }

@@ -8,7 +8,7 @@ import instaservice from "../../assets/services-instaservice.png";
 const Instaservice = () => {
   return (
     <>
-      <Navbar />
+      <Navbar isDark />
       <ServiceStructure
         title="Instagram Service Posts &amp; Engajamento"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et

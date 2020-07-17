@@ -8,7 +8,7 @@ import smartphone from "../../assets/services-app.png";
 const Apps = () => {
   return (
     <>
-      <Navbar />
+      <Navbar isDark />
       <ServiceStructure
         title="Aplicativos Mobile Android &amp; IOS"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et

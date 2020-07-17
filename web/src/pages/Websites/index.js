@@ -8,7 +8,7 @@ import websites from "../../assets/services-websites.png";
 const Websites = () => {
   return (
     <>
-      <Navbar />
+      <Navbar isDark />
       <ServiceStructure
         title="Websites Totalmente Responsivos"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et

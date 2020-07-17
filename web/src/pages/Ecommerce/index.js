@@ -8,7 +8,7 @@ import ecommerce from "../../assets/services-ecommerce.png";
 const Ecommerce = () => {
   return (
     <>
-      <Navbar />
+      <Navbar isDark />
       <ServiceStructure
         title="E-Commerce - Sua Loja Online"
         text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et

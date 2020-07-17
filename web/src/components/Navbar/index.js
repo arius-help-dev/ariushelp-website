@@ -3,8 +3,9 @@ import { Link, useHistory } from "react-router-dom";
 import "./styles.css";
 
 import logo from "../../assets/arius-help-logo.png";
+import logoDark from "../../assets/arius-help-logo-dark.png";
 
-const Navbar = () => {
+const Navbar = (props) => {
   const history = useHistory();
   let navbarToggle = false;
 
@@ -45,7 +46,7 @@ const Navbar = () => {
     <nav>
       <div className="navbar-toggle-header">
         <img
-          src={logo}
+          src={props.isDark ? logoDark : logo}
           alt="logo arius help"
           className="nav-logo"
           onClick={(event) => handleNavigate(event)}
@@ -60,14 +61,14 @@ const Navbar = () => {
 
       <div className="navbar-links">
         <ul className="main-links">
-          <li className="nav-link">
-            <Link to="/">Home</Link>
+          <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>
+            <Link className={props.isDark ? "nav-dark": "is-white"} to="/">Home</Link>
           </li>
-          <li className="nav-link">
-            <Link to="/about">Sobre</Link>
+          <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>
+            <Link className={props.isDark ? "nav-dark": "is-white"} to="/about">Sobre</Link>
           </li>
-          <li className="nav-drop">
-            <Link to="#" className="drop-link">
+          <li className={props.isDark? "nav-drop nav-dark" : "nav-drop"}>
+            <Link to="#" className={props.isDark ? "drop-link nav-dark" : "drop-link is-white"}>
               Serviços
             </Link>
             <ul className="dropped-menu">
@@ -88,17 +89,17 @@ const Navbar = () => {
               </li>
             </ul>
           </li>
-          <li className="nav-link">
-            <Link to="/Blog">Blog</Link>
+          <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>
+            <Link className={props.isDark ? "nav-dark": "is-white"} to="/Blog">Blog</Link>
           </li>
-          <li className="nav-link">
-            <Link to="/Contato">Contato</Link>
+          <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>
+            <Link className={props.isDark ? "nav-dark": "is-white"} to="/Contato">Contato</Link>
           </li>
         </ul>
 
-        <ul className="business-link">
-          <li className="nav-link">
-            <Link to="/login">Login</Link>
+        <ul className={props.isDark? "business-link nav-dark" : "business-link"}>
+          <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>
+            <Link className={props.isDark ? "nav-dark": "is-white"} to="/login">Login</Link>
           </li>
           <Link to="/cadastro" className="button green">
             Cadastrar
