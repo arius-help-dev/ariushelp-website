@@ -37,7 +37,7 @@ const Footer = (props) => {
               <Link to="/services/instaservice">INSTASERVICE</Link>
             </li>
             <li>
-              <Link to="/services/projetos">PROJETOS</Link>
+              <Link to="/services/e-commerce">E-COMMERCE</Link>
             </li>
           </ul>
         </div>

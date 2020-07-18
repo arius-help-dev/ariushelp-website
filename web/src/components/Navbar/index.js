@@ -84,9 +84,9 @@ const Navbar = (props) => {
               <li className="nav-link">
                 <Link to="/services/e-commerce">Ecommerce</Link>
               </li>
-              <li className="nav-link">
+              {/* <li className="nav-link">
                 <Link to="/services/projetos">Projetos</Link>
-              </li>
+              </li> */}
             </ul>
           </li>
           <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>

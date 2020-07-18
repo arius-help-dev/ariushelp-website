@@ -8,6 +8,7 @@ import Websites from "./pages/Websites";
 import Instaservice from "./pages/Instaservice";
 import Ecommerce from "./pages/Ecommerce";
 import Blog from "./pages/Blog";
+import Login from "./pages/Login";
 import Error404 from "./pages/Error404";
 
 const Routes = () => {
@@ -21,6 +22,7 @@ const Routes = () => {
         <Route path="/services/instaservice" component={Instaservice} />
         <Route path="/services/e-commerce" component={Ecommerce} />
         <Route path="/blog" component={Blog} />
+        <Route path="/login" component={Login} />
         <Route path="/page-not-found" component={Error404} />
         <Redirect to="/page-not-found" />
       </Switch>
