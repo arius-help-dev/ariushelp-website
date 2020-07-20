@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
 import logoDark from "../../assets/arius-help-logo-dark.png";
 
 const Login = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  
+  // const history = useHistory();
+  // se tudo certo então... history.push('/profile');
+
+  function handleLogin(event) {
+    event.preventDefault();
+    console.log(email, password);
+  }
+
   return (
     <div id="login">
       <div className="back-link">
@@ -14,7 +26,7 @@ const Login = () => {
       <div className="row">
         <div className="first-column">
           <img src={logoDark} alt="Árius-Help" />
-          <form>
+          <form onSubmit={handleLogin}>
             <div className="field">
               <label htmlFor="email">Email</label>
               <input
@@ -22,6 +34,8 @@ const Login = () => {
                 type="email"
                 id="email"
                 name="email"
+                value={email}
+                onChange={event => setEmail(event.target.value)}
               />
             </div>
             <div className="field">
@@ -31,6 +45,8 @@ const Login = () => {
                 type="password"
                 id="password"
                 name="password"
+                value={password}
+                onChange={event => setPassword(event.target.value)}
               />
             </div>
             <button className="button">Login</button>
