@@ -56,7 +56,6 @@ const Login = () => {
                   type="checkbox"
                   id="rememberPassword"
                   name="rememberPassword"
-                  placeholder="lembrar"
                 />
                 <label htmlFor="rememberPassword">Lembrar Senha</label>
               </div>

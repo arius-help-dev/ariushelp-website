@@ -101,7 +101,7 @@ const Navbar = (props) => {
           <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>
             <Link className={props.isDark ? "nav-dark": "is-white"} to="/login">Login</Link>
           </li>
-          <Link to="/cadastro" className="button green">
+          <Link to="/register" className="button green">
             Cadastrar
           </Link>
         </ul>
