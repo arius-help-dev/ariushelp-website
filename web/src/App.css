@@ -66,3 +66,7 @@ p {
   filter: brightness(1.050);
   box-shadow: 4px 6px 10px rgba(0,0,0,.5);
 }
+
+.button:focus {
+  outline: none;
+}

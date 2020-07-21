@@ -90,10 +90,10 @@ const Navbar = (props) => {
             </ul>
           </li>
           <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>
-            <Link className={props.isDark ? "nav-dark": "is-white"} to="/Blog">Blog</Link>
+            <Link className={props.isDark ? "nav-dark": "is-white"} to="/blog">Blog</Link>
           </li>
           <li className={props.isDark? "nav-link nav-dark" : "nav-link"}>
-            <Link className={props.isDark ? "nav-dark": "is-white"} to="/Contato">Contato</Link>
+            <Link className={props.isDark ? "nav-dark": "is-white"} to="/contact">Contato</Link>
           </li>
         </ul>
 

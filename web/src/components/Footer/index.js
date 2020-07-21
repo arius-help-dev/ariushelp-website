@@ -20,7 +20,7 @@ const Footer = (props) => {
               <Link to="/blog">BLOG</Link>
             </li>
             <li>
-              <Link to="/contato">CONTATO</Link>
+              <Link to="/contact">CONTATO</Link>
             </li>
           </ul>
         </div>
@@ -80,7 +80,7 @@ const Footer = (props) => {
               </a>
             </li>
           </ul>
-          <Link to="/contato" className="button">
+          <Link to="/contact" className="button">
             Contato
           </Link>
         </div>
