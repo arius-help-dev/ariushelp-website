@@ -45,7 +45,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1 1;
   max-width: 520px;
 }
 
@@ -105,4 +104,188 @@
   justify-content: center;
   align-items: center;
   flex: 1 1;
+}
+
+/* FORM CLASS */
+#contact .last-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact .last-column .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .last-column h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: var(--dark);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#contact .last-column p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 24px;
+  color: var(--dark);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#contact .last-column form {
+  display: flex;
+  flex-direction: column;
+  max-width: 470px;
+  width: 100%;
+}
+
+#contact .last-column form .field-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .last-column form .field-row .field {
+  margin: 14px 14px;
+}
+
+#contact .last-column form .field-row .field:first-child {
+  margin-left: 0px;
+}
+
+#contact .last-column form .field-row .field:last-child {
+  margin-right: 0px;
+}
+
+#contact .last-column form .field {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0px;
+  width: 100%;
+}
+
+#contact .last-column form .field label {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.88rem;
+  color: var(--dark);
+}
+
+#contact .last-column form .field input {
+  -webkit-appearance: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.88rem;
+  color: var(--grey);
+  height: 32px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px var(--dark) solid;
+}
+
+#contact .last-column form .field input:-webkit-autofill {
+  background-color: none !important;
+  color: var(--dark) !important;
+}
+
+#contact .last-column form .field input:focus {
+  outline: -webkit-focus-ring-color auto 0px;
+}
+
+#contact .last-column form textarea {
+  margin-top: 10px;
+  -webkit-appearance: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.88rem;
+  color: var(--grey);
+  padding: 5px;
+  min-height: 80px;
+  border-radius: 5px;
+  border: solid 1px var(--dark);
+}
+
+#contact .last-column form select {
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.88rem;
+  color: var(--grey);
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 1px var(--dark);
+  background-color: #FFF;
+}
+
+#contact .last-column .button {
+  border: 2px solid var(--light-green);
+  color: var(--light-green);
+  font-weight: 500;
+  background-color: rgba(0,0,0,0);
+  border-radius: 10px;
+  width: 140px;
+  height: 46px;
+  margin: 16px 0px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+#contact .last-column .button:hover {
+  background: var(--light-green);
+  color: #FFF;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
+  #contact .row {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+
+  #contact .row .first-column {
+    align-items: center;
+    align-self: center;
+    margin: 100px 0px;
+  }
+
+  #contact .row .last-column {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact .row {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  #contact .row .first-column .buttons-row {
+    width: 100%;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #contact .row .first-column .button {
+    margin: 0 10px;
+    width: 140px;
+    height: 44px;
+    font-size: 0.88rem;
+  }
+
+  #contact .last-column form textarea {
+    min-height: 120px;
+  }
+
+  #contact .row .first-column {
+    margin-bottom: 40px;
+  }
 }
