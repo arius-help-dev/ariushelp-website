@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./styles.css";
 
@@ -7,6 +7,45 @@ import CurrencyInput from "react-currency-input";
 import contactBackground from "../../assets/contact-background.png";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+
+  // for budget email
+  const [value, setValue] = useState("");
+  const [service, setService] = useState("");
+
+  function handleSendSimpleEmail(event) {
+    event.preventDefault();
+
+    const data = {
+      name,
+      lastname,
+      email,
+      subject,
+      message,
+    };
+    console.log(data);
+  }
+
+  function handleSendBudgetEmail(event) {
+    event.preventDefault();
+
+    const data = {
+      name,
+      lastname,
+      email,
+      subject,
+      message,
+      value,
+      service,
+    };
+    console.log(data);
+  }
+
+  // functions bellow controls forms interface
   function showEmailForm() {
     const emailForm = document.getElementById("emailForm");
     emailForm.classList.remove("hidden");
@@ -61,35 +100,64 @@ const Contact = () => {
           </div>
         </div>
         <div className="last-column">
-
           <div className="container" id="emailForm">
             <h2>Email</h2>
             <p>Dúvias, parcerias, lives? - entre em contato conosco</p>
-            <form>
+            <form onSubmit={handleSendSimpleEmail}>
               <div className="field-row">
                 <div className="field">
-                  <label>Nome</label>
-                  <input />
+                  <label htmlFor="name">Nome</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={name}
+                    onChange={(event) => setName(event.target.value)}
+                  />
                 </div>
                 <div className="field">
-                  <label>Sobrenome</label>
-                  <input />
+                  <label htmlFor="lastname">Sobrenome</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    value={lastname}
+                    onChange={(event) => setLastname(event.target.value)}
+                  />
                 </div>
               </div>
               <div className="field-row">
                 <div className="field">
-                  <label>Seu Email</label>
-                  <input type="email" />
+                  <label htmlFor="email">Seu Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                  />
                 </div>
                 <div className="field">
-                  <label>Assunto</label>
-                  <input type="text" />
+                  <label htmlFor="subject">Assunto</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={subject}
+                    onChange={(event) => setSubject(event.target.value)}
+                  />
                 </div>
               </div>
               <div className="field-row">
                 <div className="field">
-                  <label>Mensagem</label>
-                  <textarea placeholder="Sua mensagem..."></textarea>
+                  <label htmlFor="message">Mensagem</label>
+                  <textarea
+                    placeholder="Sua mensagem..."
+                    id="message"
+                    name="message"
+                    value={message}
+                    onChange={(event) => setMessage(event.target.value)}
+                  ></textarea>
                 </div>
               </div>
               <button className="button">Enviar</button>
@@ -99,35 +167,70 @@ const Contact = () => {
           <div className="container hidden" id="budgetForm">
             <h2>Orçamento</h2>
             <p>Vamos fazer o seu orçamento</p>
-            <form>
+            <form onSubmit={handleSendBudgetEmail}>
               <div className="field-row">
                 <div className="field">
-                  <label>Nome</label>
-                  <input />
+                  <label htmlFor="name">Nome</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={name}
+                    onChange={(event) => setName(event.target.value)}
+                  />
                 </div>
                 <div className="field">
-                  <label>Sobrenome</label>
-                  <input />
+                  <label htmlFor="lastname">Sobrenome</label>
+                  <input
+                    type="text"
+                    id="lastname"
+                    name="lastname"
+                    value={lastname}
+                    onChange={(event) => setLastname(event.target.value)}
+                  />
                 </div>
               </div>
               <div className="field-row">
                 <div className="field">
-                  <label>Seu Email</label>
-                  <input type="email" />
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                  />
                 </div>
                 <div className="field">
-                  <label>Assunto</label>
-                  <input type="text" />
+                  <label htmlFor="subject">Assunto</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    value={subject}
+                    onChange={(event) => setSubject(event.target.value)}
+                  />
                 </div>
               </div>
               <div className="field-row">
                 <div className="field">
-                  <label>Valor em R$</label>
-                  <CurrencyInput decimalSeparator="," thousandSeparator="." />
+                  <label htmlFor="value">Valor em R$</label>
+                  <CurrencyInput
+                    decimalSeparator=","
+                    thousandSeparator="."
+                    id="value"
+                    name="value"
+                    value={value}
+                    onChange={(event) => setValue(event)}
+                  />
                 </div>
                 <div className="field">
-                  <label>Serviço</label>
-                  <select id="services" name="services">
+                  <label htmlFor="service">Serviço</label>
+                  <select
+                    id="services"
+                    name="services"
+                    onChange={(event) => setService(event.target.value)}
+                  >
                     <option value="apps">Apps</option>
                     <option value="website">Websites</option>
                     <option value="eCommerce">E-commerce</option>
@@ -145,7 +248,6 @@ const Contact = () => {
               <button className="button">Enviar</button>
             </form>
           </div>
-
         </div>
       </div>
     </div>
